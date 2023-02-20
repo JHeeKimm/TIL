@@ -1,0 +1,25 @@
+name: Build README
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - README.md
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v2
+        with:
+          # necessary for github-action-til-autoformat-readme
+          fetch-depth: 0
+      - name: Autoformat README
+        with:
+          description: |
+            오늘 배운 것들 ⭐
+          footer: |
+            [1]: 
+            [2]:
+          list_most_recent: 2 # optional, lists most recent TILS below description
+          date_format: "2023 Jan 15:04" # optional, must align to https://golang.org/pkg/time/#Time.Format
