@@ -68,7 +68,8 @@
 
 - while loop, while the condition is truthy, body code is executed.
 - do while loop, body code is executed first, then check the condition.
-- for loop, for(begin; condition; step) - inline variable declaration : 블럭 안에 지역변수 선언  
+- for loop, for(begin; condition; step)
+- inline variable declaration : 블럭 안에 지역변수 선언  
   for(let i=3; i>0; i=i-2){ }
 - nested loops : for문안에 for문
 - break, continue
