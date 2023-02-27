@@ -48,7 +48,7 @@ for(let fruit of fruits){
 fruits.forEach((fruit) => console.log(fruit));
 ```
 
-4. Addtion, deletion, copy
+4. Addition, deletion, copy
 
 - push : add an item to the end
 
@@ -89,7 +89,7 @@ fruits.splice(1, 1, '🍒', '🍉'); // 지워진 자리에 '🍒', '🍉' 추�
 fruits.splice(1, 0, '🍒', '🍉'); // 지우지 않고 '🍒', '🍉' 추가됨
 ```
 
-- combine tow arrays
+- combine two arrays
 
 ```
 const fruits2 = ['🍐', '🍍'];
