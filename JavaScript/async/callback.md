@@ -70,7 +70,7 @@ userStorage.loginUser(
         userStorage.getRoles(
             user,
             (userWithRoles) => {
-                alert('Hello ${userWithRoles.name}, you have a ${userWithRoles.role} role')
+                alert(`Hello ${userWithRoles.name}, you have a ${userWithRoles.role} role`)
             },
             (error) => {console.log(error)}
         );
