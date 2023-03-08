@@ -13,7 +13,7 @@
 
 2. Parameters
 
-- premitive parameters: passed by value
+- primitive parameters: passed by value
 - object parameters: passed by reference
 
 3. Default parameters (added in ES6)

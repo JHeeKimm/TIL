@@ -15,7 +15,7 @@
 
 3. Constant, r(read only) : 한 번 할당한 뒤 변경될 수 없음
 
-- Immutable data types: premitive types, frozen objects (i.e. object.freeze())
+- Immutable data types: primitive types, frozen objects (i.e. object.freeze())
 - Mutable data types: all objects by default are mutable in JS
 - favor immutable data type always for a few reasons:
   - security
@@ -24,8 +24,8 @@
 
 4. Variable types
 
-- primitive, single item : number, string, boolean, null, undefined, symbol
-- object, box container : data structure
+- primitive, single item : number, string, boolean, null, undefined, symbol => 변수를 복사하면 값 자체가 복사되어옴
+- object, box container : data structure => 오브젝트를 복사하면 참조값이 복사되어서 값을 바꾸면 오브젝트가 가리키는 데이터가 변경됨
 - function, first-class function
 
 Number : Infinity, -Infinity, NaN, bigInt(~n)  
