@@ -17,3 +17,23 @@ array1.forEach(element => console.log(element));
 // Expected output: "b"
 // Expected output: "c"
 ```
+
+> forEach와 map 메소드
+
+- 공통점: 첫번째로 콜백함수를 인자로 받고 그 함수의 인자는 (배열 원소 값,그 값의 인덱스,배열 자체)
+
+- 차이점
+  - forEach : return 값이 없다
+  - map : return 값이 있다
+
+```
+let data= [1, 2, 3, 4, 5]
+// forEach 를 사용해서 원소의 값들을 각각 3씩 증가시키기
+let result = [];
+data.forEach(x => { result.push(x + 3) });
+console.log(result);
+
+// map 을 사용해서 원소의 값들을 각각 3씩 증가시키기
+let result2 = data.map(x => { return x + 3});
+console.log(result2);
+```
